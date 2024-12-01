@@ -53,10 +53,10 @@ const Scrap = async (searchby) => {
 	try {
 		let country = searchby.country;
 		const puppeteerOptions = {
-			args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
-			// defaultViewport: chromium.defaultViewport,
+			args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox', '--hide-scrollbars'],
+			defaultViewport: chromium.defaultViewport,
 			executablePath: await chromium.executablePath() || puppeteer.executablePath(),
-			// headless: chromium.headless,
+			headless: chromium.headless,
 			ignoreDefaultArgs: chromium.ignoreDefaultArgs,
 		};
 
