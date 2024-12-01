@@ -28,9 +28,7 @@
     "puppeteer-cluster": "^0.23.0",
     "puppeteer-core": "^23.8.0",
     "random-useragent": "^0.5.0",
-    "uuid": "^11.0.3"
-  },
-  "devDependencies": {
+    "uuid": "^11.0.3",
     "@sparticuz/chromium": "^131.0.0"
   },
   "type": "module"
